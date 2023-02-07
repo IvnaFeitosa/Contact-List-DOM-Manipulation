@@ -48,3 +48,13 @@ function addContact(){
 
     contactSection.append(h3, ul);
 }
+
+function removeContact(){
+    const contactSection = document.getElementById('contacts-list');
+
+    const text = document.getElementsByTagName('h3');
+    const contact = document.getElementsByTagName('ul');
+
+    contactSection.removeChild(text[text.length - 1]);
+    contactSection.removeChild(contact[contact.length - 1]);
+}
